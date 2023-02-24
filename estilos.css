@@ -1,0 +1,84 @@
+/* selector {
+    propiedad: valor;
+} 
+Elemento en linea, solo ocupa lo que ocupa el elmento
+si es en bloque aunque el elemento sea pequeño, ocupara toda la página
+
+Tipos de selector
+- * Universal
+- de tipo, al seleccionar cualquier etiqueta (h1,h2,p,etc)
+- clase, se le agrega una clase al elemento al que se le quieere ingresar un estilo en pareticular
+- id
+- por atributo (Los que van dentro de elementos de html)
+- descendiente
+- pseudo-clases, los eventos de una seleccion
+*/
+
+* {
+    color: red;
+}
+h1{
+    background-color: brown;
+}
+
+/* Por clase */
+.claseUno{
+    color: #f00;
+}
+/* Por ID */
+
+#idElemento {
+    width: 12px;
+}
+/* Por atributo */
+[type="text"]{
+    color: black;
+}
+/* de forma descendiente */
+h2 p {
+    color: black;
+}
+
+p:hover{
+    color: rgb(46, 180, 36);
+}
+
+/* Para el important */
+h1{
+    color: gray !important;
+    font-family: 'Explora', cursive;
+    
+}
+
+/* Tipografia  */
+.contacto{
+    font-size: 12em;
+    font-family: Georgia;
+    font-weight: normal;  /*Grosor*/
+    font-stretch:  normal; /**/
+    font-variant: small-caps;
+}
+
+h2{
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding: 20px; /*Aqui se le da un padding a todas las propiedades left. right, etc*/
+    padding: 20px 20px; /* Aqui es otra forma de poner un padding el primero es para top y bottom y el segundo left y right*/
+    padding: 20px 10px 30px 40px; /*top, right, bottom, left*/
+    text-align: center;
+    border-radius: 10px;
+    border: 4px solid blue;
+    box-shadow: 4px 4px 10px 0px #000; /* primer argumento: eje x, segundo argumento. eje y, tercer argumento: el tamaño del desenfoque, cuarto: tamaño del borde, quinto: color*/
+    text-shadow: 2px 2px 7px #000;
+    transform: rotate(40deg);
+}
+
+div{
+
+    overflow: scroll;
+}
